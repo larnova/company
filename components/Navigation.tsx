@@ -79,7 +79,7 @@ const DesktopNav = ({
               src="/logo-metadata.png"
               fill
               alt="logo"
-              objectFit="contain"
+              className="object-contain"
             />
           </span>
           Larnova

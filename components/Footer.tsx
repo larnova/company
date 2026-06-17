@@ -12,7 +12,7 @@ function Footer() {
                 src="/footer-logo.png"
                 alt="logo"
                 fill
-                objectFit="contain"
+                className="object-contain"
               />
             </div>
             <h3 className="text-3xl font-semibold pt-1.5 text-gray-800">
@@ -26,7 +26,7 @@ function Footer() {
                   src="/instagram.png"
                   alt="Instagram"
                   fill
-                  objectFit="contain"
+                  className="object-contain"
                 />
               </div>
             </Link>
@@ -39,7 +39,7 @@ function Footer() {
                   src="/linkedin.png"
                   alt="linkedIn"
                   fill
-                  objectFit="contain"
+                  className="object-contain"
                 />
               </div>
             </Link>
@@ -49,7 +49,7 @@ function Footer() {
                   src="/twitter.png"
                   alt="twitter"
                   fill
-                  objectFit="contain"
+                  className="object-contain"
                 />
               </div>
             </Link>
