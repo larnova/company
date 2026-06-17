@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 
 import NextImage from "next/image";
 import Link from "next/link";
@@ -95,10 +95,20 @@ const involveData = [
 
 export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
   const [isImageLoaded] = useImageLoaded(
     "/images/home-bg-wb.png",
     containerRef
   );
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.muted = true;
+      videoRef.current.play().catch((err) => {
+        console.warn("Video autoplay failed on first load:", err);
+      });
+    }
+  }, []);
 
   return (
     <div>
@@ -109,7 +119,7 @@ export default function Home() {
         ref={containerRef}
         className={`${
           isImageLoaded ? "slide" : ""
-        } relative w-full bg-fixed bg-cover h-[calc(100vh-57px)] overflow-hidden`}
+        } relative w-full bg-scroll md:bg-fixed bg-cover bg-[center_top] h-[calc(100dvh-57px)] overflow-hidden`}
       >
         <div className="flex flex-col gap-5 justify-end h-full w-full absolute top-0 bg-gradient-to-b from-[#000000f5] to-[#0000000c] p-8">
           <p
@@ -230,11 +240,13 @@ export default function Home() {
       </section>
 
       {/* ── Lokolm (a current frontier) ──────────────── */}
-      <section className="relative w-11/12 mx-auto mt-12 lg:mt-16 rounded-3xl lg:rounded-4xl overflow-hidden h-[calc(100vh-160px)] lg:h-[calc(100vh-90px)]">
+      <section className="relative w-11/12 mx-auto mt-12 lg:mt-16 rounded-3xl lg:rounded-4xl overflow-hidden h-[calc(100dvh-160px)] lg:h-[calc(100vh-90px)]">
         <video
+          ref={videoRef}
           src="/who-we-are.mp4"
           autoPlay
           muted
+          playsInline
           controls={false}
           loop
           className="h-full w-full object-cover"
@@ -250,14 +262,14 @@ export default function Home() {
             Trained on localized data, designed for agentic workflows, and made
             to understand how Africa actually speaks and does business.
           </p>
-          <div className="flex flex-wrap justify-center gap-3 mb-10 lg:mb-14">
-            <Link href="https://lokolm.larnova.co" target="_blank">
-              <button className="bg-[url('/text-bg-v2.png')] bg-cover bg-top text-white text-base lg:text-lg px-6 lg:px-10 py-2 rounded-sm font-bold hover:text-white/60 cursor-pointer transition-all">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-10 lg:mb-14 px-4">
+            <Link href="https://lokolm.larnova.co" target="_blank" className="w-full sm:w-auto max-w-xs">
+              <button className="w-full bg-[url('/text-bg-v2.png')] bg-cover bg-top text-white text-base lg:text-lg px-6 lg:px-10 py-2.5 rounded-sm font-bold hover:text-white/60 cursor-pointer transition-all">
                 Discover Lokolm
               </button>
             </Link>
-            <Link href="https://lokolm.larnova.co/contribute" target="_blank">
-              <button className="border border-white/70 text-white text-base lg:text-lg px-6 lg:px-10 py-2 rounded-sm font-bold hover:bg-white/10 cursor-pointer transition-all">
+            <Link href="https://lokolm.larnova.co/contribute" target="_blank" className="w-full sm:w-auto max-w-xs">
+              <button className="w-full border border-white/70 text-white text-base lg:text-lg px-6 lg:px-10 py-2.5 rounded-sm font-bold hover:bg-white/10 cursor-pointer transition-all">
                 Contribute Data
               </button>
             </Link>

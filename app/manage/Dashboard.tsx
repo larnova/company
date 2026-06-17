@@ -89,7 +89,7 @@ export default function Dashboard({
                 <select
                   value={form.type}
                   onChange={(e) => set("type")(e.target.value)}
-                  className="w-full rounded-xl border border-gray-300 bg-white px-3.5 py-2.5 text-sm"
+                  className="w-full rounded-xl border border-gray-300 bg-white px-3.5 py-2.5 text-base lg:text-sm"
                 >
                   <option>Full-time</option>
                   <option>Part-time</option>
@@ -105,7 +105,7 @@ export default function Dashboard({
                 value={form.description}
                 onChange={(e) => set("description")(e.target.value)}
                 placeholder="What they'll do, what we're looking for…"
-                className="w-full rounded-xl border border-gray-300 px-3.5 py-2.5 text-sm outline-none focus:border-gray-900"
+                className="w-full rounded-xl border border-gray-300 px-3.5 py-2.5 text-base lg:text-sm outline-none focus:border-gray-900"
               />
             </div>
             <Field
@@ -186,7 +186,7 @@ function Field({
         value={value}
         onChange={(e) => onChange(e.target.value)}
         placeholder={placeholder}
-        className="w-full rounded-xl border border-gray-300 px-3.5 py-2.5 text-sm outline-none focus:border-gray-900"
+        className="w-full rounded-xl border border-gray-300 px-3.5 py-2.5 text-base lg:text-sm outline-none focus:border-gray-900"
       />
     </div>
   );

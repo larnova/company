@@ -58,7 +58,7 @@ export default function SignIn({ invalid }: { invalid?: boolean }) {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="you@larnova.co"
-            className="w-full rounded-xl border border-gray-300 px-4 py-3 text-sm outline-none focus:border-gray-900"
+            className="w-full rounded-xl border border-gray-300 px-4 py-3 text-base lg:text-sm outline-none focus:border-gray-900"
           />
           {status === "error" && (
             <p className="text-sm text-red-600">{message}</p>
