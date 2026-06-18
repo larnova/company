@@ -8,7 +8,7 @@ import { getJobs } from "@/lib/store";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Careers — Larnova",
+  title: "Careers: Larnova",
   description:
     "Help build what doesn't exist yet. Larnova is always looking for audacious, exceptional people to drive the next frontier of innovation.",
   icons: "/logo-metadata.png",
@@ -17,15 +17,15 @@ export const metadata: Metadata = {
 const reasons = [
   {
     title: "Work on the frontier",
-    body: "We take on foundational, ambiguous problems — the kind where the playbook hasn't been written yet. You'll do the most important work of your career.",
+    body: "We take on foundational, ambiguous problems where the playbook hasn't been written yet. You'll do the most important work of your career.",
   },
   {
     title: "Real ownership",
-    body: "Small team, huge surface area. You won't be a cog — you'll own outcomes that matter and see your work ship to the real world.",
+    body: "Small team, huge surface area. You won't be a cog. You'll own outcomes that matter and see your work ship to the real world.",
   },
   {
     title: "Build from here",
-    body: "We're proving that world-class innovation can be driven from Africa. Be part of writing that story from the ground floor.",
+    body: "We're proving that world class innovation can be driven from Africa. Be part of writing that story from the ground floor.",
   },
 ];
 
@@ -114,7 +114,7 @@ export default async function Careers() {
         ) : (
           <div className="rounded-3xl lg:rounded-4xl bg-gray-100 px-8 py-14 lg:px-16 lg:py-20 text-center">
             <h3 className="text-2xl lg:text-3xl font-bold text-gray-900">
-              No open roles right now — reach out anyway.
+              No open roles right now, but please reach out anyway.
             </h3>
             <p className="mt-4 lg:text-lg text-gray-600 leading-relaxed">
               We&apos;re always looking for exceptional engineers, researchers,

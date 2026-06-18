@@ -43,7 +43,7 @@ const Newsletter = () => {
             </h3>
             <p className="mt-3 text-gray-600 lg:text-lg">
               Updates on what we&apos;re building, where we&apos;re headed, and
-              the ideas driving us — straight to your inbox. No noise.
+              the ideas driving us, straight to your inbox. No noise.
             </p>
           </div>
           <div className="lg:basis-1/2 mt-7 lg:mt-0 w-full">

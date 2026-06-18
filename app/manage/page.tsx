@@ -8,7 +8,7 @@ import Dashboard from "./Dashboard";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Admin — Larnova",
+  title: "Admin | Larnova",
   robots: { index: false, follow: false },
 };
 

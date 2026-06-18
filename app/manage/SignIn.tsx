@@ -36,7 +36,7 @@ export default function SignIn({ invalid }: { invalid?: boolean }) {
     <div className="w-full max-w-md rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
       <h1 className="text-2xl font-bold text-gray-900">Larnova Admin</h1>
       <p className="mt-2 text-sm text-gray-600">
-        Sign in to manage the site. We&apos;ll email you a secure, one-time link.
+        Sign in to manage the site. We&apos;ll email you a secure one-time link.
       </p>
 
       {invalid && (
@@ -47,7 +47,7 @@ export default function SignIn({ invalid }: { invalid?: boolean }) {
 
       {status === "sent" ? (
         <div className="mt-6 rounded-lg border border-gray-200 bg-gray-50 p-4 text-sm text-gray-700">
-          Check your inbox — if that email can manage this site, a sign-in link
+          Check your inbox. If that email can manage this site, a sign-in link
           is on its way.
         </div>
       ) : (

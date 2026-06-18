@@ -5,9 +5,9 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Larnova",
+  title: "Privacy Policy: Larnova",
   description:
-    "How Larnova collects, uses, and protects your information — including newsletter and contact details.",
+    "How Larnova collects, uses, and protects your information, including newsletter and contact details.",
   icons: "/logo-metadata.png",
 };
 
@@ -16,7 +16,7 @@ const sections = [
     heading: "Information we collect",
     body: [
       "When you subscribe to our newsletter, we collect the email address you provide. When you contact us by email or our contact page, we collect the details you choose to share (such as your name, email, and message).",
-      "We may also collect limited, non-identifying technical information (such as basic analytics about page visits) to understand how the site is used and improve it.",
+      "We may also collect limited, anonymous technical information (such as basic analytics about page visits) to understand how the site is used and improve it.",
     ],
   },
   {
@@ -35,7 +35,7 @@ const sections = [
   {
     heading: "Service providers",
     body: [
-      "We rely on trusted third parties to operate the site and deliver email — for example, our email provider (Resend) and our hosting provider. These providers process data only on our behalf and under their own privacy and security commitments.",
+      "We rely on trusted third parties to operate the site and deliver email, such as our email provider (Resend) and our hosting provider. These providers process data only on our behalf and under their own privacy and security commitments.",
     ],
   },
   {

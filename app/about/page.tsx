@@ -6,9 +6,9 @@ import Footer from "@/components/Footer";
 import Newsletter from "@/components/Newsletter";
 
 export const metadata: Metadata = {
-  title: "About — Larnova",
+  title: "About: Larnova",
   description:
-    "Larnova is a driver of innovation, challenging the status quo to build what doesn't yet exist — from Africa, for the world.",
+    "Larnova is a driver of innovation, challenging the status quo to build what doesn't yet exist, from Africa, for the world.",
   icons: "/logo-metadata.png",
 };
 
@@ -19,11 +19,11 @@ const beliefs = [
   },
   {
     title: "Audacity is a strategy",
-    body: "The biggest leaps look delusional right up until they're obvious. We choose the audacious path on purpose — and then we execute relentlessly.",
+    body: "The biggest leaps look delusional right up until they're obvious. We choose the audacious path on purpose, and then we execute relentlessly.",
   },
   {
     title: "Great ideas can come from anywhere",
-    body: "World-changing innovation shouldn't depend on where you were born. We're proving the next frontier can be driven from Africa.",
+    body: "Groundbreaking innovation shouldn't depend on where you were born. We're proving the next frontier can be driven from Africa.",
   },
   {
     title: "Build it for real",
@@ -45,7 +45,7 @@ export default function About() {
           We exist to challenge the status quo
         </h1>
         <p className="mt-6 lg:text-2xl text-gray-600 leading-relaxed">
-          Larnova is a driver of innovation — turning audacious, zero-to-one
+          Larnova is a driver of innovation, turning audacious zero to one
           ideas into technology that moves the world forward. We build what
           others call impossible, from Africa, for everyone.
         </p>
@@ -61,13 +61,12 @@ export default function About() {
           <span className="font-semibold text-gray-900">
             &ldquo;that&apos;s just how it&apos;s done.&rdquo;
           </span>{" "}
-          We&apos;re a team of audacious visionaries — some might call us
-          self-delusionists — convinced that the boldest technology of the next
+          We&apos;re a team of audacious visionaries, or delusionists as some might call us, convinced that the boldest technology of the next
           decade can be invented here, not just imported.
         </p>
         <p>
           So we build. We go after foundational problems most people consider
-          too hard, too early, or too far from the spotlight — and we turn them
+          too hard, too early, or too far from the spotlight, and we turn them
           into real products. Today that conviction points at the next frontier
           of intelligence and the people who will build it. Tomorrow, it points
           at whatever the future demands next.
@@ -102,7 +101,7 @@ export default function About() {
           What we&apos;re building now
         </h2>
         <p className="mt-5 lg:text-xl text-gray-600 leading-relaxed">
-          Our current frontier is intelligence built for the real world —
+          Our current frontier is intelligence built for the real world
           through{" "}
           <Link
             href="https://lokolm.larnova.co"

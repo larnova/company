@@ -8,14 +8,14 @@ const fustat = Fustat({
 });
 
 export const metadata: Metadata = {
-  title: "Larnova — A Driver of Innovation",
+  title: "Larnova: A Driver of Innovation",
   description:
-    "Larnova challenges the status quo to build what doesn't yet exist — turning audacious, zero-to-one ideas into technology that moves the world forward, from Africa to everyone.",
+    "Larnova challenges the status quo to build what doesn't yet exist by turning audacious zero to one ideas into technology that moves the world forward, from Africa to everyone.",
   icons: "/logo-metadata.png",
   openGraph: {
-    title: "Larnova — A Driver of Innovation",
+    title: "Larnova: A Driver of Innovation",
     description:
-      "Larnova challenges the status quo to build what doesn't yet exist — turning audacious, zero-to-one ideas into technology that moves the world forward, from Africa to everyone.",
+      "Larnova challenges the status quo to build what doesn't yet exist by turning audacious zero to one ideas into technology that moves the world forward, from Africa to everyone.",
     images:
       "https://larnova.co/_next/image?url=%2Fimages%2Fhome-bg-wb.png&w=640&q=75",
   },

@@ -35,7 +35,7 @@ const principlesData = [
     icon: Globe2,
     title: "Built for the real world",
     description:
-      "We build for the contexts, languages, and edge cases that global products overlook — technology that fits the people who use it.",
+      "We build for the contexts, languages, and edge cases that global products overlook, creating technology that fits the people who use it.",
   },
   {
     icon: Rocket,
@@ -47,7 +47,7 @@ const principlesData = [
     icon: Users,
     title: "Talent as infrastructure",
     description:
-      "Great innovation needs great builders — so we grow the engineers and researchers the future will be built by.",
+      "Great innovation needs great builders, so we grow the engineers and researchers who will build the future.",
   },
 ];
 
@@ -166,7 +166,7 @@ export default function Home() {
           </h3>
           <p className="mt-6 text-lg lg:text-2xl leading-relaxed text-gray-700">
             A world where breakthrough innovation can come from{" "}
-            <span className="font-semibold text-gray-900">anywhere</span>—where
+            <span className="font-semibold text-gray-900">anywhere</span>, and where
             Africa{" "}
             <span className="font-semibold text-gray-900">
               drives the global frontier
@@ -175,9 +175,9 @@ export default function Home() {
             <span className="font-semibold text-gray-900">
               audacious visionaries
             </span>
-            —some might call us{" "}
-            <span className="font-semibold text-gray-900">self-delusionists</span>
-            —turning <span className="font-semibold text-gray-900">zero-to-one</span>{" "}
+            , or as some might call us,{" "}
+            <span className="font-semibold text-gray-900">delusionists</span>,
+            turning <span className="font-semibold text-gray-900">zero to one</span>{" "}
             ideas into technology the world hasn&apos;t seen yet, and refusing to
             accept{" "}
             <span className="font-semibold text-gray-900">
@@ -234,7 +234,7 @@ export default function Home() {
         </h4>
         <p className="mt-4 lg:text-lg text-gray-600">
           Vision means nothing without execution. Today, that conviction points
-          at the next frontier of intelligence — and the people who will build
+          at the next frontier of intelligence and the people who will build
           it.
         </p>
       </section>
@@ -281,7 +281,7 @@ export default function Home() {
       <section className="relative w-11/12 mx-auto mt-12 lg:mt-16 rounded-3xl lg:rounded-4xl overflow-hidden h-[480px] lg:h-[600px]">
         <NextImage
           src="/images/laig.jpg"
-          alt="Larnova AI Group — students building Africa's AI"
+          alt="Larnova AI Group: students building Africa's AI"
           fill
           className="object-cover"
         />
@@ -293,8 +293,8 @@ export default function Home() {
             The people building Africa&apos;s AI
           </h3>
           <p className="text-white mb-5 text-lg lg:text-xl text-center w-11/12 lg:w-3/5 mx-auto font-medium">
-            Our department-backed student research network across Nigerian
-            universities — curating localized data and building the agents that
+            Our department backed student research network across Nigerian
+            universities curates localized data and builds the agents that
             power Lokolm.
           </p>
           <Link

@@ -5,9 +5,9 @@ import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
 
 export const metadata: Metadata = {
-  title: "Contact — Larnova",
+  title: "Contact: Larnova",
   description:
-    "Get in touch with Larnova — partnerships, press, and questions about Lokolm and the Larnova AI Group.",
+    "Get in touch with Larnova for partnerships, press, and questions about Lokolm and the Larnova AI Group.",
   icons: "/logo-metadata.png",
 };
 
@@ -67,7 +67,7 @@ export default function Contact() {
         </h1>
         <p className="mt-4 lg:text-xl text-gray-600">
           Whether you&apos;re a partner, a researcher, the press, or a student
-          who wants in — we&apos;d love to hear from you.
+          who wants in, we&apos;d love to hear from you.
         </p>
       </section>
 
