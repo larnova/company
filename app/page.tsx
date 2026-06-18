@@ -119,7 +119,7 @@ export default function Home() {
         ref={containerRef}
         className={`${
           isImageLoaded ? "slide" : ""
-        } relative w-full bg-scroll md:bg-fixed bg-cover bg-[center_top] h-[calc(100dvh-57px)] overflow-hidden`}
+        } relative w-full bg-scroll md:bg-fixed bg-cover bg-[left_top] lg:bg-[center_top] h-[calc(100dvh-57px)] overflow-hidden`}
       >
         <div className="flex flex-col gap-5 justify-end h-full w-full absolute top-0 bg-gradient-to-b from-[#000000f5] to-[#0000000c] p-8">
           <p
@@ -159,12 +159,12 @@ export default function Home() {
       </section>
 
       {/* ── Who we are ───────────────────────────────── */}
-      <section className="w-11/12 lg:w-7/12 mt-16 lg:mt-28 mx-auto">
+      <section className="w-11/12 lg:w-7/12 mt-20 lg:mt-28 mx-auto">
         <Reveal from="up" className="text-center">
-          <h3 className="text-4xl lg:text-6xl font-bold bg-[url('/text-bg-v2.png')] bg-cover bg-clip-text text-transparent">
+          <h3 className="text-4xl lg:text-6xl text-right  font-bold bg-[url('/text-bg-v2.png')] bg-cover bg-clip-text text-transparent">
             Who we are
           </h3>
-          <p className="mt-6 text-lg lg:text-2xl leading-relaxed text-gray-700">
+          <p className="mt-6 text-base lg:text-lg text-left leading-relaxed text-gray-700">
             A world where breakthrough innovation can come from{" "}
             <span className="font-semibold text-gray-900">anywhere</span>, and where
             Africa{" "}
@@ -229,10 +229,10 @@ export default function Home() {
 
       {/* ── What we're building now ──────────────────── */}
       <section className="w-11/12 lg:w-7/12 mx-auto text-center mt-24 lg:mt-32">
-        <h4 className="text-3xl lg:text-5xl font-medium bg-gradient-to-r from-gray-400 to-black bg-clip-text text-transparent">
+        <h4 className="text-3xl lg:text-5xl text-right font-medium bg-gradient-to-r from-gray-400 to-black bg-clip-text text-transparent">
           What we&apos;re building now
         </h4>
-        <p className="mt-4 lg:text-lg text-gray-600">
+        <p className="mt-4 text-left text-base lg:text-lg text-gray-600">
           Vision means nothing without execution. Today, that conviction points
           at the next frontier of intelligence and the people who will build
           it.
@@ -240,7 +240,7 @@ export default function Home() {
       </section>
 
       {/* ── Lokolm (a current frontier) ──────────────── */}
-      <section className="relative w-11/12 mx-auto mt-12 lg:mt-16 rounded-3xl lg:rounded-4xl overflow-hidden h-[calc(100dvh-160px)] lg:h-[calc(100vh-90px)]">
+      <section className="relative w-11/12 mx-auto mt-12 lg:mt-16 rounded-3xl lg:rounded-4xl overflow-hidden h-[calc(100dvh-120px)] sm:h-[calc(100dvh-160px)] lg:h-[calc(100vh-90px)] min-h-[460px] sm:min-h-[500px]">
         <video
           ref={videoRef}
           src="/who-we-are.mp4"
@@ -251,25 +251,25 @@ export default function Home() {
           loop
           className="h-full w-full object-cover"
         ></video>
-        <div className="absolute flex flex-col justify-end top-0 h-full w-full bg-gradient-to-b from-[#00000007] to-[#000000]">
-          <h4 className="text-center text-white font-medium text-xl mb-2">
+        <div className="absolute flex flex-col justify-end top-0 h-full w-full bg-gradient-to-b from-[#00000007] to-[#000000] p-5 sm:p-8">
+          <h4 className="text-center text-white font-medium text-sm sm:text-base lg:text-xl mb-1.5">
             Lokolm
           </h4>
-          <h3 className="text-white text-4xl lg:leading-12 text-center mb-2 mx-auto w-4/5 lg:w-5/6 font-bold">
+          <h3 className="text-white text-2xl sm:text-3xl lg:text-4xl lg:leading-12 text-center mb-1.5 mx-auto w-11/12 sm:w-4/5 lg:w-5/6 font-bold">
             A foundational model, built for the African context
           </h3>
-          <p className="text-white mb-4 text-lg lg:text-xl text-center w-4/5 mx-auto lg:w-3/5 font-medium">
+          <p className="text-white mb-4 text-base lg:text-lg text-center w-11/12 sm:w-4/5 mx-auto lg:w-3/5 font-medium">
             Trained on localized data, designed for agentic workflows, and made
             to understand how Africa actually speaks and does business.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-10 lg:mb-14 px-4">
-            <Link href="https://lokolm.larnova.co" target="_blank" className="w-full sm:w-auto max-w-xs">
-              <button className="w-full bg-[url('/text-bg-v2.png')] bg-cover bg-top text-white text-base lg:text-lg px-6 lg:px-10 py-2.5 rounded-sm font-bold hover:text-white/60 cursor-pointer transition-all">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-6 sm:mb-10 lg:mb-14 px-4">
+            <Link href="https://lokolm.larnova.co" target="_blank" className="w-full sm:w-auto max-w-xs flex justify-center">
+              <button className="w-full sm:w-64 bg-[url('/text-bg-v2.png')] bg-cover bg-top text-white text-base lg:text-lg px-6 lg:px-10 py-2.5 rounded-sm font-bold hover:text-white/60 cursor-pointer transition-all">
                 Discover Lokolm
               </button>
             </Link>
-            <Link href="https://lokolm.larnova.co/contribute" target="_blank" className="w-full sm:w-auto max-w-xs">
-              <button className="w-full border border-white/70 text-white text-base lg:text-lg px-6 lg:px-10 py-2.5 rounded-sm font-bold hover:bg-white/10 cursor-pointer transition-all">
+            <Link href="https://lokolm.larnova.co/contribute" target="_blank" className="w-full sm:w-auto max-w-xs flex justify-center">
+              <button className="w-full sm:w-64 border border-white/70 text-white text-base lg:text-lg px-6 lg:px-10 py-2.5 rounded-sm font-bold hover:bg-white/10 cursor-pointer transition-all">
                 Contribute Data
               </button>
             </Link>
@@ -285,27 +285,29 @@ export default function Home() {
           fill
           className="object-cover"
         />
-        <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-b from-[#00000020] to-[#000000] p-8">
-          <h4 className="text-center text-white font-medium text-xl mb-2">
+        <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-b from-[#00000020] to-[#000000] p-5 sm:p-8">
+          <h4 className="text-center text-white font-medium text-sm sm:text-base lg:text-xl mb-1.5">
             Larnova AI Group (LAIG)
           </h4>
-          <h3 className="text-white text-3xl lg:text-5xl lg:leading-14 text-center mb-3 mx-auto w-11/12 lg:w-4/5 font-bold">
+          <h3 className="text-white text-2xl sm:text-3xl lg:text-5xl lg:leading-14 text-center mb-1.5 mx-auto w-11/12 lg:w-4/5 font-bold">
             The people building Africa&apos;s AI
           </h3>
-          <p className="text-white mb-5 text-lg lg:text-xl text-center w-11/12 lg:w-3/5 mx-auto font-medium">
+          <p className="text-white mb-4 text-base lg:text-lg text-center w-11/12 lg:w-3/5 mx-auto font-medium">
             Our department backed student research network across Nigerian
             universities curates localized data and builds the agents that
             power Lokolm.
           </p>
-          <Link
-            className="block mx-auto mb-2"
-            href="https://laig.larnova.co"
-            target="_blank"
-          >
-            <button className="bg-[url('/text-bg-v2.png')] bg-cover bg-top text-white text-base lg:text-lg px-6 lg:px-10 py-2 rounded-sm font-bold hover:text-white/60 cursor-pointer transition-all">
-              Join your chapter
-            </button>
-          </Link>
+          <div className="flex justify-center mb-2 px-4">
+            <Link
+              href="https://laig.larnova.co"
+              target="_blank"
+              className="w-full sm:w-auto max-w-xs flex justify-center"
+            >
+              <button className="w-full sm:w-64 bg-[url('/text-bg-v2.png')] bg-cover bg-top text-white text-base lg:text-lg px-6 lg:px-10 py-2.5 rounded-sm font-bold hover:text-white/60 cursor-pointer transition-all">
+                Join your chapter
+              </button>
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -333,7 +335,7 @@ export default function Home() {
                 involved
               </span>
             </h4>
-            <p className="mt-4 text-gray-600 lg:text-xl">
+            <p className="mt-4 text-base lg:text-lg text-gray-600">
               However you build, there&apos;s a way in. Help shape what comes
               next.
             </p>
@@ -356,7 +358,7 @@ export default function Home() {
                     <h5 className="mt-6 text-xl font-semibold text-gray-900">
                       {title}
                     </h5>
-                    <p className="mt-2 text-sm leading-relaxed text-gray-600 flex-1">
+                    <p className="mt-2 text-base lg:text-lg leading-relaxed text-gray-600 flex-1">
                       {description}
                     </p>
                     <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-gray-900">
@@ -392,7 +394,7 @@ function IconWithTitleAndDescription({
         <Icon className="h-7 w-7" strokeWidth={1.75} />
       </div>
       <h3 className="text-2xl lg:text-3xl font-medium mt-8">{title}</h3>
-      <p className="mt-3 text-black/80 leading-relaxed">{description}</p>
+      <p className="mt-3 text-base lg:text-lg text-black/80 leading-relaxed">{description}</p>
     </div>
   );
 }

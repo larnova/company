@@ -68,7 +68,7 @@ export default function Privacy() {
           Privacy Policy
         </h1>
         <p className="mt-4 text-gray-500">Last updated: June 2026</p>
-        <p className="mt-6 lg:text-lg text-gray-700 leading-relaxed">
+        <p className="mt-6 text-base lg:text-lg text-gray-700 leading-relaxed">
           This policy explains what information Larnova collects, how we use it,
           and the choices you have. It applies to this website and the
           newsletter and contact features on it.
@@ -83,7 +83,7 @@ export default function Privacy() {
               {body.map((paragraph, i) => (
                 <p
                   key={i}
-                  className="mt-3 text-gray-600 lg:text-lg leading-relaxed"
+                  className="mt-3 text-base lg:text-lg text-gray-600 leading-relaxed"
                 >
                   {paragraph}
                 </p>
@@ -95,7 +95,7 @@ export default function Privacy() {
             <h2 className="text-2xl lg:text-3xl font-semibold text-gray-900">
               Contact us
             </h2>
-            <p className="mt-3 text-gray-600 lg:text-lg leading-relaxed">
+            <p className="mt-3 text-base lg:text-lg text-gray-600 leading-relaxed">
               Questions about this policy or your data? Reach us at{" "}
               <Link
                 href="mailto:contact@larnova.co?subject=Privacy%20enquiry"

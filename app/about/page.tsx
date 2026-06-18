@@ -44,7 +44,7 @@ export default function About() {
         <h1 className="mt-4 text-4xl lg:text-7xl font-bold leading-tight bg-[url('/text-bg-v2.png')] bg-cover bg-clip-text text-transparent">
           We exist to challenge the status quo
         </h1>
-        <p className="mt-6 lg:text-2xl text-gray-600 leading-relaxed">
+        <p className="mt-6 text-base lg:text-lg text-gray-600 leading-relaxed">
           Larnova is a driver of innovation, turning audacious zero to one
           ideas into technology that moves the world forward. We build what
           others call impossible, from Africa, for everyone.
@@ -52,7 +52,7 @@ export default function About() {
       </section>
 
       {/* ── Story ────────────────────────────────────── */}
-      <section className="w-11/12 lg:w-7/12 mx-auto mt-20 lg:mt-28 space-y-6 lg:text-xl text-gray-700 leading-relaxed">
+      <section className="w-11/12 lg:w-7/12 mx-auto mt-20 lg:mt-28 space-y-6 text-base lg:text-lg text-gray-700 leading-relaxed">
         <h2 className="text-3xl lg:text-5xl font-medium bg-gradient-to-r from-gray-400 to-black bg-clip-text text-transparent">
           Our story
         </h2>
@@ -88,7 +88,7 @@ export default function About() {
                 <h3 className="text-xl lg:text-2xl font-semibold text-gray-900">
                   {title}
                 </h3>
-                <p className="mt-3 text-gray-600 leading-relaxed">{body}</p>
+                <p className="mt-3 text-base lg:text-lg text-gray-600 leading-relaxed">{body}</p>
               </div>
             ))}
           </div>
@@ -100,7 +100,7 @@ export default function About() {
         <h2 className="text-3xl lg:text-5xl font-medium bg-gradient-to-r from-gray-400 to-black bg-clip-text text-transparent">
           What we&apos;re building now
         </h2>
-        <p className="mt-5 lg:text-xl text-gray-600 leading-relaxed">
+        <p className="mt-5 text-base lg:text-lg text-gray-600 leading-relaxed">
           Our current frontier is intelligence built for the real world
           through{" "}
           <Link

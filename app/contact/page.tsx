@@ -65,7 +65,7 @@ export default function Contact() {
         <h1 className="text-4xl lg:text-6xl font-bold bg-[url('/text-bg-v2.png')] bg-cover bg-clip-text text-transparent">
           Let&apos;s talk
         </h1>
-        <p className="mt-4 lg:text-xl text-gray-600">
+        <p className="mt-4 text-base lg:text-lg text-gray-600">
           Whether you&apos;re a partner, a researcher, the press, or a student
           who wants in, we&apos;d love to hear from you.
         </p>
@@ -80,7 +80,7 @@ export default function Contact() {
                 <h3 className="font-bold text-xl bg-[url('/text-bg-v2.png')] bg-cover bg-clip-text text-transparent">
                   {title}
                 </h3>
-                <p className="mt-3 text-gray-700">{value}</p>
+                <p className="mt-3 text-base lg:text-lg text-gray-700">{value}</p>
               </div>
             );
             return href ? (
@@ -106,7 +106,7 @@ export default function Contact() {
               className="flex flex-col rounded-2xl border border-gray-200 p-8"
             >
               <h3 className="text-2xl font-semibold text-gray-900">{title}</h3>
-              <p className="mt-3 text-gray-600 flex-1">{description}</p>
+              <p className="mt-3 text-base lg:text-lg text-gray-600 flex-1">{description}</p>
               <Link
                 href={href}
                 target={external ? "_blank" : undefined}

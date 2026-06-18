@@ -44,7 +44,7 @@ export default async function Careers() {
         <h1 className="mt-4 text-4xl lg:text-7xl font-bold leading-tight bg-[url('/text-bg-v2.png')] bg-cover bg-clip-text text-transparent">
           Help build what doesn&apos;t exist yet
         </h1>
-        <p className="mt-6 lg:text-2xl text-gray-600 leading-relaxed">
+        <p className="mt-6 text-base lg:text-lg text-gray-600 leading-relaxed">
           We&apos;re looking for audacious people who&apos;d rather invent the
           future than wait for it. If that&apos;s you, we should talk.
         </p>
@@ -64,7 +64,7 @@ export default async function Careers() {
               <h3 className="text-xl lg:text-2xl font-semibold text-gray-900">
                 {title}
               </h3>
-              <p className="mt-3 text-gray-600 leading-relaxed">{body}</p>
+              <p className="mt-3 text-base lg:text-lg text-gray-600 leading-relaxed">{body}</p>
             </div>
           ))}
         </div>
@@ -93,7 +93,7 @@ export default async function Careers() {
                       <p className="mt-1.5 text-sm text-gray-500">
                         {job.team} · {job.location} · {job.type}
                       </p>
-                      <p className="mt-4 text-gray-600 leading-relaxed whitespace-pre-line">
+                      <p className="mt-4 text-base lg:text-lg text-gray-600 leading-relaxed whitespace-pre-line">
                         {job.description}
                       </p>
                     </div>
@@ -116,7 +116,7 @@ export default async function Careers() {
             <h3 className="text-2xl lg:text-3xl font-bold text-gray-900">
               No open roles right now, but please reach out anyway.
             </h3>
-            <p className="mt-4 lg:text-lg text-gray-600 leading-relaxed">
+            <p className="mt-4 text-base lg:text-lg text-gray-600 leading-relaxed">
               We&apos;re always looking for exceptional engineers, researchers,
               and builders. Tell us what you want to build and why it matters.
             </p>

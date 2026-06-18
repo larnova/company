@@ -41,7 +41,7 @@ const Newsletter = () => {
             <h3 className="text-3xl lg:text-4xl font-bold text-gray-900">
               Follow the mission
             </h3>
-            <p className="mt-3 text-gray-600 lg:text-lg">
+            <p className="mt-3 text-base lg:text-lg text-gray-600">
               Updates on what we&apos;re building, where we&apos;re headed, and
               the ideas driving us, straight to your inbox. No noise.
             </p>
